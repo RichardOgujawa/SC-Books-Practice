@@ -42,7 +42,8 @@ body {
 
 .menuDropdown {
   list-style: none;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   height: 25vh;
 }
 
@@ -64,16 +65,218 @@ body {
 }
 
 #allDivs {
-  background: red;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
-  -webkit-transform: translateY(-11.52%);
-          transform: translateY(-11.52%);
+  background: white;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  -webkit-transform: translateY(-3.7%);
+          transform: translateY(-3.7%);
   opacity: 1;
+  width: 90%;
+  padding-bottom: 0;
+  margin: auto;
 }
 
-.down {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+.topDiv {
+  padding-bottom: 10%;
+}
+
+.bookDiv {
+  width: 100%;
+  height: 50vh;
+}
+
+#book-img {
+  width: 81%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  margin: auto;
+}
+
+.bestsellerList {
+  width: 100%;
+  height: 30vh;
+}
+
+#bestseller-list {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  margin: auto;
+  color: #838689;
+  font-weight: 400;
+  font-family: cm-sans-serif, sans-serif;
+}
+
+.quotes {
+  width: 100%;
+}
+
+.quoteClassContent {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  margin-top: 20%;
+  color: #838689;
+}
+
+.ref {
+  font-weight: bold;
+  text-align: right;
+  font-style: italic;
+}
+
+.welcome {
+  background: #FDF0D9;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-bottom: -6%;
+}
+
+#welcome {
+  letter-spacing: 1.7px;
+}
+
+.welcomeContent {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #838689;
+  font-family: cm-sans-serif, sans-serif;
+}
+
+#profile {
+  width: 80%;
+  border: 8px solid white;
+  display: block;
+  margin: auto;
+}
+
+.welcomeContent h3 {
+  font-weight: 100;
+  font-size: 13px;
+  text-align: center;
+  color: #818181;
+}
+
+.welcomeContent h2 {
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 23px;
+  text-align: center;
+  color: #626262;
+}
+
+.welcomeContent #welcome-paragraph {
+  text-align: justify;
+}
+
+.welcomeContent .link {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.welcomeContent .link > p {
+  color: #F19B00;
+  width: 100%;
+  text-align: center;
+}
+
+.welcomeContent .link > p > a {
+  color: #F19B00;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.welcomeContent #link:hover {
+  color: gray;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.selectedWorks {
+  background: #FDF0D9;
+  padding-top: 40px;
+  width: 100%;
+  letter-spacing: 1.7px;
+  font-family: cm-sans-serif, sans-serif;
+  font-weight: lighter;
+}
+
+.selectedContent {
+  width: 90%;
+  margin: auto;
+}
+
+#selected-works {
+  color: #F19B00;
+  width: 70%;
+  margin: auto;
+}
+
+.one, .two, .three {
+  margin-bottom: 12%;
+  width: 100%;
+}
+
+#picture-book, #quoteref {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+
+#picture-book {
+  width: 100%;
+}
+
+#quoteref {
+  font-size: 15px;
+  margin-top: -5%;
+  color: #4b4b4b;
+}
+
+#yotg {
+  color: #F19B00;
+  font-weight: 100;
+  margin-top: -3%;
+}
+
+#quote {
+  color: #838689;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: -3%;
+}
+
+#yotg a {
+  color: #F19B00;
+  text-decoration: none;
+}
+
+.quickLinks {
+  width: 100%;
+}
+
+.quickLinks .content {
+  width: 90%;
+  margin: auto;
+  color: #F19B00;
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+
+hr {
+  border-color: rgba(158, 158, 158, 0.179);
+}
+
+.hi {
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

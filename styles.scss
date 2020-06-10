@@ -1,6 +1,7 @@
 $gray:#838689;
 $orange: #F19B00;
 $cm: cm-sans-serif, sans-serif;
+$light-orange: #FDF0D9;
 
 @font-face {
     src: url(fonts/cm-sans-serif-2012.woff); 
@@ -15,6 +16,7 @@ body {
     background: #E4E6DB;
 }
 
+//HEADER
 .headerDiv {
     height: 13vh;
 }
@@ -28,6 +30,7 @@ body {
     text-align: center;
 }
 
+//HAMBURGER ICON
 .hamburgerDiv {
     height: 10vh;
     width: 100%;
@@ -45,11 +48,12 @@ body {
     margin:auto;
 }
 
+//DROPDOWN MENU
 .menuDropdown{
     list-style: none;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: 25vh;
-
 }
 
 .mdditem {
@@ -62,7 +66,6 @@ body {
     font-size: 15px;
     font-family: $cm;
     font-weight: 100;
-
 }
 
 .active {
@@ -70,15 +73,220 @@ body {
     background: white; 
 }
 
+//BG
 #allDivs {
-    background: red;
-    transition: 1s ease;
-    transform: translateY(-11.52%); 
+    background: rgb(255, 255, 255);
+    transition: 0.7s ease;
+    transform: translateY(-3.7%); 
     opacity: 1;
+    width: 90%;
+    padding-bottom: 0;
+    margin: auto;
+    
 }
 
-.down {
-    transform: translateY(0%);
+.topDiv {
+    padding-bottom: 10%;
+}
+
+//BOOK IMG 
+.bookDiv {
+    width: 100%;
+    height: 50vh;
+}
+
+#book-img {
+    width: 81%;
+    //vertically 
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    //horizontally 
+    display: block; 
+    margin: auto;
+}
+
+//BESTSELLER
+.bestsellerList {
+    width: 100%; 
+    height: 30vh;
+}
+
+#bestseller-list {
+    width: 90%; 
+    margin: auto;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    //horizontally 
+    display: block; 
+    margin: auto;
+    color: $gray;
+    font-weight: 400;
+    font-family: $cm;
 }
 
 
+//QUOTES
+.quotes {
+    width: 100%;     
+}
+
+.quoteClassContent {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    margin-top: 20%;
+    color: $gray;
+}
+
+.ref {
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+}
+
+//WELCOME 
+.welcome {
+    background: $light-orange;
+    width: 100%; 
+    padding-top: 10%; 
+    padding-bottom: 10%;
+    margin-bottom: -6%;
+}
+
+#welcome {
+    letter-spacing: 1.7px;
+
+}
+.welcomeContent {
+    width: 90%; 
+    margin-right: auto; 
+    margin-left: auto;
+    color: $gray;
+    font-family: $cm;
+}
+
+#profile {
+    width: 80%;
+    border: 8px solid white;
+    display: block; 
+    margin: auto;
+}
+
+.welcomeContent {
+
+h3 {
+    font-weight: 100;
+    font-size: 13px;        
+    text-align: center;
+    color: rgb(129, 129, 129);
+}
+h2 {
+    font-weight: 100;
+    font-size: 20px;        
+    margin-top: 23px;
+    text-align: center;
+    color: rgb(98, 98, 98);
+}
+
+#welcome-paragraph {
+    text-align: justify;
+}
+.link {
+    width: 100%; 
+    margin-top: 10%;
+
+}
+.link > p{
+    color: $orange;
+    width: 100%;
+    text-align: center;
+}
+.link > p > a{
+    color: $orange;
+    text-decoration: none;
+    font-weight: 300;
+}
+#link:hover {
+    color: gray;
+    transition: 1s;
+}
+}
+
+
+//SELECTED WORKS
+.selectedWorks {
+    background: $light-orange;
+    padding-top: 40px; 
+    width: 100%; 
+    letter-spacing: 1.7px;
+    font-family: $cm;
+    font-weight: lighter;
+
+}
+
+.selectedContent {
+    width: 90%; 
+    margin: auto;
+}
+
+#selected-works {
+    color: $orange;
+    width: 70%; 
+    margin: auto;
+}
+
+.one, .two, .three {
+    margin-bottom: 12%;
+    width: 100%;
+} 
+
+#picture-book, #quoteref{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight: 700;
+}
+
+#picture-book {
+    width: 100%;
+}
+#quoteref {
+    font-size: 15px;
+    margin-top: -5%;
+    color: rgb(75, 75, 75);
+}
+#yotg {
+    color: $orange;
+    font-weight: 100;
+    margin-top: -3%;
+}
+#quote {
+    color: $gray;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: -3%;
+}
+
+#yotg a{
+    color: $orange;
+    text-decoration: none;
+}
+
+.quickLinks {
+    width: 100%; 
+.content {
+    width: 90%;
+    margin: auto;
+    color: $orange;
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+}
+
+hr {
+    border-color: rgba(158, 158, 158, 0.179);
+}
+.hi {
+    cursor: pointer;
+}

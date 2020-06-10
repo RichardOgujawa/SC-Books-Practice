@@ -20,6 +20,13 @@ For more information, check out [this article by Sara Cope](https://css-tricks.c
 height: 50%; 
 float: right;
 ```
+
+- To centre a link with text-align, you have to nest it in a paragraph tag, ex. : 
+
+```
+<p id="scholastic"> <a href="#"> Click here to check out Scholastic's Underland Chronicles website! </a> </p>
+```
+
 ## JS
 - When you're making trying to move something, use an if/else statement, and make sure the action you want to do when you first click the button is in the else statement, and the other action that would return it to it's initial state is in the if statement. 
 
