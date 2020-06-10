@@ -10,6 +10,10 @@ body {
   background: #E4E6DB;
 }
 
+.headerDiv {
+  height: 13vh;
+}
+
 #header {
   color: #585D60;
   font-family: cm-sans-serif, sans-serif;
@@ -23,15 +27,53 @@ body {
 .hamburgerDiv {
   height: 10vh;
   width: 100%;
+  margin-bottom: 3%;
 }
 
 #hamburger {
   height: 50%;
-  float: right;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  margin-right: 5%;
+  display: block;
+  margin: auto;
+}
+
+.menuDropdown {
+  list-style: none;
+  width: 100%;
+  height: 25vh;
+}
+
+.mdditem {
+  width: 100%;
+  height: 25%;
+  color: white;
+  background: #F19B00;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 15px;
+  font-family: cm-sans-serif, sans-serif;
+  font-weight: 100;
+}
+
+.active {
+  color: #F19B00;
+  background: white;
+}
+
+#allDivs {
+  background: red;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-transform: translateY(-11.52%);
+          transform: translateY(-11.52%);
+  opacity: 1;
+}
+
+.down {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,6 @@
 $gray:#838689;
+$orange: #F19B00;
+$cm: cm-sans-serif, sans-serif;
 
 @font-face {
     src: url(fonts/cm-sans-serif-2012.woff); 
@@ -14,33 +16,69 @@ body {
 }
 
 .headerDiv {
-
+    height: 13vh;
 }
 #header {
     color: #585D60;
-    font-family: cm-sans-serif, sans-serif;
+    font-family: $cm;
     font-size: 33px;
     width: 50%;
     margin-right: auto; 
     margin-left: auto;
     text-align: center;
-
-
 }
 
 .hamburgerDiv {
     height: 10vh;
     width: 100%;
+    margin-bottom: 3%;
 }
 
 #hamburger {
     height: 50%;
-    float: right; 
-    //HOW TO POSITION IN THE MIDDLE OF DIV
+    //HOW TO POSITION IN THE VERTICAL MIDDLE OF DIV
     position: relative;
     top: 50%;
     transform: translateY(-50%);    
-    //HOW TO POSITION IN THE MIDDLE OF DIV
-    margin-right: 5%;
+    //HOW TO POSITION IN THE HORIZONTAL MIDDLE OF DIV
+    display: block; 
+    margin:auto;
 }
+
+.menuDropdown{
+    list-style: none;
+    width: 100%;
+    height: 25vh;
+
+}
+
+.mdditem {
+    width: 100%;
+    height: 25%;
+    color: white;
+    background: $orange; 
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 15px;
+    font-family: $cm;
+    font-weight: 100;
+
+}
+
+.active {
+    color: $orange;
+    background: white; 
+}
+
+#allDivs {
+    background: red;
+    transition: 1s ease;
+    transform: translateY(-11.52%); 
+    opacity: 1;
+}
+
+.down {
+    transform: translateY(0%);
+}
+
 
