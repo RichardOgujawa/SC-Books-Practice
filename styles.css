@@ -10,10 +10,6 @@ body {
   background: #E4E6DB;
 }
 
-.headerDiv {
-  text-align: center;
-}
-
 #header {
   color: #585D60;
   font-family: cm-sans-serif, sans-serif;
@@ -21,6 +17,7 @@ body {
   width: 50%;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 .hamburgerDiv {
