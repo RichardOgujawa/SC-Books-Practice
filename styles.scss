@@ -1,0 +1,43 @@
+$gray:#838689;
+
+@font-face {
+    src: url(fonts/cm-sans-serif-2012.woff); 
+    font-family: 'cm-sans-serif';
+}
+
+
+body {
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden;
+    background: #E4E6DB;
+}
+
+.headerDiv {
+    text-align: center;
+}
+#header {
+    color: #585D60;
+    font-family: cm-sans-serif, sans-serif;
+    font-size: 33px;
+    width: 50%;
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.hamburgerDiv {
+    height: 10vh;
+    width: 100%;
+}
+
+#hamburger {
+    height: 50%;
+    float: right; 
+    //HOW TO POSITION IN THE MIDDLE OF DIV
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);    
+    //HOW TO POSITION IN THE MIDDLE OF DIV
+    margin-right: 5%;
+}
+
