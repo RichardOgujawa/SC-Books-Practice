@@ -113,8 +113,9 @@ body {
     padding-bottom: 0;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, ));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
+
 
 .topDiv {
     padding-bottom: 10%;
@@ -348,4 +349,37 @@ hr {
         transform: translateY(-5%);
     }
 }
+
+@media only screen and (min-device-width : 1200px) and (max-device-width : 1844px) 
+{
+    #header {
+        font-size: 50px;
+    }
+    #allDivs {
+        transform: translateY(-5%);
+        grid-template-columns: 1fr 2fr 1fr; 
+        grid-template-areas: "box2 box1 box3"
+    }
+    .welcome {
+        z-index: -100; 
+    }
+
+    .topDiv {
+        grid-area: box1; 
+    }
     
+    .welcome {
+        grid-area: box2; 
+    }
+    
+    .selectedWorks {
+        grid-area: box3;
+    }
+    .hamburgerDiv {
+        display: none;
+    }
+}
+    
+    
+
+//IF YOU WANT TO CHANGE THE ORDER OF GRID ITEMS IN A CSS GRID, JUST CHANGE THEIR Z-INDEX, BECAUSE THAT'S WHAT CSS GRID WORKS OFF OF

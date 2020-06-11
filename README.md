@@ -34,6 +34,26 @@ Make the div a grid `display:grid;` and then give it some columns that will fit 
 
 To download it, click the copy/paste to clipboard icon beside the link under the font name, and paste it in a web search engine, and it should download instantly.
 
+- How to re-arrange grid items in CSS Grid
+1. Establish the grid: 
+
+``` display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-areas: "box2 box1 box3" 
+```
+
+2. Give the grid items names and put them in however order you wish.
+```
+.griditem1 {
+    grid-area: box1; 
+}
+.griditem2 {
+    grid-area: box2; 
+}
+.griditem3 {
+    grid-area: box3; 
+}
+```
 
 ## JS
 - When you're making trying to move something, use an if/else statement, and make sure the action you want to do when you first click the button is in the else statement, and the other action that would return it to it's initial state is in the if statement. 

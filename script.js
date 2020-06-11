@@ -1,8 +1,12 @@
 
-  w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+//THE REASON WHY THIS ISN'T WORKING PROPERLY IS BECAUSE AT A CERTAIN POINT THE BOOK'S DIV COVERS THE MENU BUTTON ICON 
+ 
+ w = document.documentElement.clientWidth 
+//SCREEN SIZES// 
+
   //Phone
   var phoneMin = 375;
-  var phoneMax = 767; 
+  var phoneMax = 500; 
 
   //Tablet
   var tabletMin = 768;
@@ -12,10 +16,19 @@
   var laptopMin = 1025; 
   var laptopMax = 1824;
 
+//VARIABLES
+  var allDiv = document.getElementById('allDivs');
+
   //TABLET
 function moveDown() {
     if (w >= phoneMin && w <= phoneMax) {
-        console.log('Mobile: It worked');
+        if (allDiv.style.transform == "translateY(0%)") 
+        {
+            allDiv.style.transform = "translateY(-3.35%)"
+        }
+        else  {
+            allDiv.style.transform = "translateY(0%)";
+        }
     }
     else if (w >= tabletMin && w <= tabletMax) {
         console.log('Tablet: It worked');
@@ -25,13 +38,4 @@ function moveDown() {
     }
 }
 
-        // var allDiv = document.getElementById('allDivs');
         
-        // if (allDiv.style.transform == "translateY(0%)") 
-        // {
-        //     allDiv.style.transform = "translateY(-3.35%)"
-        // }
-        // else  {
-        //     allDiv.style.transform = "translateY(0%)";
-        // }
-        // }
