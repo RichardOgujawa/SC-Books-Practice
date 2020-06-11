@@ -1,12 +1,41 @@
 $gray:#838689;
 $orange: #F19B00;
-$cm: cm-sans-serif, sans-serif;
 $light-orange: #FDF0D9;
+$cm: cm-sans-serif, sans-serif;
+$cardo: cardo, sans-serif; 
+$cardo-bold: cardo-bold, sans-serif;
+$montserrat-bold: montserrat-bold, sans-serif;
+$montserrat-reg: montserrat-reg, sans-serif;
+
+
+
 
 @font-face {
     src: url(fonts/cm-sans-serif-2012.woff); 
     font-family: 'cm-sans-serif';
 }
+
+@font-face {
+    src: url(fonts/cardo.woff2); 
+    font-family: 'cardo'; 
+}
+
+@font-face {
+    src: url(fonts/cardo-bold.woff2); 
+    font-family: 'cardo-bold'; 
+}
+
+@font-face {
+    src: url(fonts/montserrat-bold.woff2); 
+    font-family: 'montserrat-bold'; 
+}
+
+@font-face {
+    src: url(fonts/montserrat-reg.woff2); 
+    font-family: 'montserrat-reg'; 
+}
+
+
 
 
 body {
@@ -22,7 +51,8 @@ body {
 }
 #header {
     color: #585D60;
-    font-family: $cm;
+    font-family: $montserrat-bold;
+    font-weight: 800; 
     font-size: 33px;
     width: 50%;
     margin-right: auto; 
@@ -77,13 +107,13 @@ body {
 #allDivs {
     background: rgb(255, 255, 255);
     transition: 0.7s ease;
-    transform: translateY(-3.7%); 
+    transform: translateY(-3.35%); 
     opacity: 1;
     width: 90%;
     padding-bottom: 0;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, ));
 }
 
 .topDiv {
@@ -126,13 +156,15 @@ body {
     margin: auto;
     color: $gray;
     font-weight: 400;
-    font-family: $cm;
+    font-family: $montserrat-reg;
+    font-size: 14px;
 }
 
 
 //QUOTES
 .quotes {
-    width: 100%;     
+    width: 100%;    
+    font-family: $cardo; 
 }
 
 .quoteClassContent {
@@ -167,7 +199,8 @@ body {
     margin-right: auto; 
     margin-left: auto;
     color: $gray;
-    font-family: $cm;
+    font-family: $montserrat-reg;
+    
 }
 
 #profile {
@@ -184,6 +217,8 @@ h3 {
     font-size: 13px;        
     text-align: center;
     color: rgb(129, 129, 129);
+    font-family: $cardo;
+
 }
 h2 {
     font-weight: 100;
@@ -195,11 +230,14 @@ h2 {
 
 #welcome-paragraph {
     text-align: justify;
+    font-family: $cardo;
+
 }
 .link {
     width: 100%; 
     margin-top: 10%;
-
+    font-family: $cardo-bold;
+    font-weight: 700;
 }
 .link > p{
     color: $orange;
@@ -224,8 +262,6 @@ h2 {
     padding-top: 40px; 
     width: 100%; 
     letter-spacing: 1.7px;
-    font-family: $cm;
-    font-weight: lighter;
 
 }
 
@@ -236,8 +272,11 @@ h2 {
 
 #selected-works {
     color: $orange;
-    width: 70%; 
+    width: 90%; 
     margin: auto;
+    font-family: $montserrat-bold;
+    text-transform: uppercase;
+
 }
 
 .one, .two, .three {
@@ -245,13 +284,16 @@ h2 {
     width: 100%;
 } 
 
-#picture-book, #quoteref{
+#quoteref{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     font-weight: 700;
 }
 
 #picture-book {
-    width: 100%;
+    width: 100%; 
+    font-family: $montserrat-reg; 
+    font-weight: 400;
+    text-transform: uppercase;
 }
 #quoteref {
     font-size: 15px;
@@ -260,8 +302,11 @@ h2 {
 }
 #yotg {
     color: $orange;
-    font-weight: 100;
+    font-family: $cardo;
     margin-top: -3%;
+    font-weight: 700;
+    text-transform: uppercase;
+
 }
 #quote {
     color: $gray;
@@ -276,18 +321,31 @@ h2 {
 
 .quickLinks {
     width: 100%; 
+#title {
+    text-transform: uppercase;
+    font-family: $montserrat-bold;
+}
 .content {
     width: 90%;
     margin: auto;
     color: $orange;
     padding-bottom: 50px;
     padding-top: 25px;
+    font-family: $cardo-bold;
 }
 }
 
 hr {
     border-color: rgba(158, 158, 158, 0.179);
 }
-.hi {
-    cursor: pointer;
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+{
+    #header {
+        font-size: 50px;
+    }
+    #allDivs {
+        transform: translateY(-5%);
+    }
 }
+    
