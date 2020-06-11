@@ -56,25 +56,31 @@ else  {
 ```
  - Execute scripts based on screen size javascript
  ```
-   w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+  w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+  //Phone
   var phoneMin = 375;
   var phoneMax = 767; 
 
+  //Tablet
   var tabletMin = 768;
   var tabletMax = 1024; 
   
+  //Laptop
   var laptopMin = 1025; 
   var laptopMax = 1824;
 
 
-  //TABLET
-  function moveDown(){
-  if ( w >= tabletMin && w <= tabletMax) {     
-        console.log('It worked'); 
-  }
-  else {
-    console.log('It did not work'); 
-  }
+function moveDown() {
+    if (w >= phoneMin && w <= phoneMax) {
+        console.log('Mobile: It worked');
+    }
+    else if (w >= tabletMin && w <= tabletMax) {
+        console.log('Tablet: It worked');
+    }
+    else if (w >= laptopMin && w <= laptopMax) {
+        console.log('Laptop: It worked');
+    }
 }
+
 
 ```
