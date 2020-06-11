@@ -28,7 +28,7 @@ float: right;
 ```
 - Responsive CSS Grid without Media Queries: 
 Make the div a grid `display:grid;` and then give it some columns that will fit the space provided it responsively `grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));`
-(Link to the video I got this from)[https://www.youtube.com/watch?v=bam83Xv4VMA]. 
+[Link to the video I got this from](https://www.youtube.com/watch?v=bam83Xv4VMA). 
 
 
 ## JS
