@@ -31,11 +31,15 @@ function moveDown() {
         }
     }
     else if (w >= tabletMin && w <= tabletMax) {
-        console.log('Tablet: It worked');
+        if (allDiv.style.transform == "translateY(0%)") 
+        {
+            allDiv.style.transform = "translateY(-5.45%)"
+        }
+        else  {
+            allDiv.style.transform = "translateY(0%)";
+        }    
     }
-    else if (w >= laptopMin && w <= laptopMax) {
-        console.log('Laptop: It worked');
-    }
+
 }
 
         

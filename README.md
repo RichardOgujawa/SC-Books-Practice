@@ -1,7 +1,8 @@
 # What I learned
 ## HTML 
-- 
+
 ## CSS 
+- Scroll on spacebar is a pretty standard action. If it's not working, try enabling scroll automatically. `overflow:scroll;`
 - To __centre align__ text just use: `text-align: center;`
 For more information, check out [this article by Sara Cope](https://css-tricks.com/almanac/properties/t/text-align/).
 - To **centre-align content** in the middle of a DIV use:
@@ -39,7 +40,7 @@ To download it, click the copy/paste to clipboard icon beside the link under the
 
 ``` display: grid;
     grid-template-columns: 1fr 2fr 1fr; 
-    grid-template-areas: "box2 box1 box3" 
+    grid-template-areas: "box2 box1 box3";
 ```
 
 2. Give the grid items names and put them in however order you wish.

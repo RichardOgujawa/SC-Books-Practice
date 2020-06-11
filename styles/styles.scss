@@ -42,23 +42,30 @@ body {
     margin: 0; 
     padding: 0; 
     overflow-x: hidden;
+    overflow-y: scroll;
     background: #E4E6DB;
 }
 
 //HEADER
 .headerDiv {
     height: 13vh;
+    width: 100%;
 }
 #header {
     color: #585D60;
     font-family: $montserrat-bold;
     font-weight: 800; 
     font-size: 33px;
-    width: 50%;
+    width: 90%;
     margin-right: auto; 
     margin-left: auto;
     text-align: center;
+    a {
+        color: #585D60;  
+        text-decoration: none;  
+    }
 }
+
 
 //HAMBURGER ICON
 .hamburgerDiv {
@@ -76,6 +83,10 @@ body {
     //HOW TO POSITION IN THE HORIZONTAL MIDDLE OF DIV
     display: block; 
     margin:auto;
+}
+//MENU 
+.mainMenuContainer {
+    display: none;
 }
 
 //DROPDOWN MENU
@@ -112,8 +123,6 @@ body {
     width: 90%;
     padding-bottom: 0;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 
@@ -334,50 +343,137 @@ h2 {
     padding-top: 25px;
     font-family: $cardo-bold;
 }
+a {
+    color: $orange;
+    text-decoration: none;
+}
 }
 
 hr {
     border-color: rgba(158, 158, 158, 0.179);
 }
 
+//TABLET
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
 {
     #header {
         font-size: 50px;
     }
     #allDivs {
-        transform: translateY(-5%);
+        transform: translateY(-5.45%);
+        width: 90.1%;
     }
+    #book-img {
+        width: 60%;
+    }
+    #quote {
+        margin-bottom: 6%;
+    }
+    #picture-book {
+        margin-bottom: 5%;
+    }
+    .pos {
+        margin-top: 5%;
+    }
+    .selectedWorks {
+        padding-top: 15%;
+    }
+    .quickLinks {
+        padding-bottom: 7%;
+    }
+    .quoteClassContent {
+        margin-top: 9%;
+    }
+    
 }
 
+//LAPTOP 
 @media only screen and (min-device-width : 1200px) and (max-device-width : 1844px) 
 {
     #header {
         font-size: 50px;
+        text-align: left;
     }
+
+    .mainMenuContainer {
+        display: block;
+        width: 100%; 
+        height: 7vh;
+        margin-bottom: -1%;
+
+    }
+    .mainMenuDiv {
+        width: 90%; 
+        height: 100%;
+        margin: auto;
+    }
+    .menu {
+        height: 100%; 
+        width: 100%;
+    }
+    .bmenu  {
+      height: 100%;
+      width:10%;
+      border: none;
+      font-weight: $montserrat-reg;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .bmenu {
+        background:$orange;
+        color: white;
+        transition: 1s ease; 
+        &:hover {
+            background: white;
+            color: $orange;
+            transition: 1s ease; 
+            cursor: pointer;
+        }
+    }
+
+    .active {
+        background: white;
+        color: $orange;
+    }
+
     #allDivs {
-        transform: translateY(-5%);
+        transform: translateY(0.5%);
+        display: grid;
+        display: grid;
         grid-template-columns: 1fr 2fr 1fr; 
-        grid-template-areas: "box2 box1 box3"
-    }
-    .welcome {
-        z-index: -100; 
+        grid-template-areas: "box2 box1 box3";
+        margin-bottom: 7%;
+        margin-top: 0%;
     }
 
     .topDiv {
         grid-area: box1; 
     }
-    
+
     .welcome {
         grid-area: box2; 
+        background: $light-orange;
+        width: 100%; 
+        padding-top: 10%; 
+        padding-bottom: 10%;
+        margin-bottom: 0%;
     }
-    
+
     .selectedWorks {
         grid-area: box3;
     }
-    .hamburgerDiv {
+    .hamburgerDiv, .menuDropdown {
         display: none;
     }
+
+
+    #book-img {
+        width: 50%;
+    }
+
+
+    
 }
     
     
