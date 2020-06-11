@@ -82,7 +82,8 @@ body {
     width: 90%;
     padding-bottom: 0;
     margin: auto;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 .topDiv {

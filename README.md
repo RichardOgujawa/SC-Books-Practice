@@ -26,6 +26,10 @@ float: right;
 ```
 <p id="scholastic"> <a href="#"> Click here to check out Scholastic's Underland Chronicles website! </a> </p>
 ```
+- Responsive CSS Grid without Media Queries: 
+Make the div a grid `display:grid;` and then give it some columns that will fit the space provided it responsively `grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));`
+(Link to the video I got this from)[https://www.youtube.com/watch?v=bam83Xv4VMA]. 
+
 
 ## JS
 - When you're making trying to move something, use an if/else statement, and make sure the action you want to do when you first click the button is in the else statement, and the other action that would return it to it's initial state is in the if statement. 
@@ -46,3 +50,4 @@ else  {
     allDiv.style.transform = "translateY(0%)";
 }
 ```
+
