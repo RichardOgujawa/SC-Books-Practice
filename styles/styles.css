@@ -23,12 +23,16 @@
   font-family: 'montserrat-reg';
 }
 
+
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
   background: #E4E6DB;
+  overflow: scroll;
+  scrollbar-width: 100px;
 }
 
 .headerDiv {
@@ -98,7 +102,7 @@ body {
 
 #allDivs {
   background: white;
-  display: grid;
+  
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
   -webkit-transform: translateY(-3.35%);
@@ -107,6 +111,7 @@ body {
   width: 90%;
   padding-bottom: 0;
   margin: auto;
+
 }
 
 .topDiv {
