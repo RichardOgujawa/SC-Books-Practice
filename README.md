@@ -1,4 +1,5 @@
 # What I learned
+**I put this file in .gitignore by the way, because it was showing up instead of the index.html file**
 ## HTML 
 
 ## CSS 
